@@ -64,13 +64,14 @@ font-family: 'Shadows Into Light', cursive;
   text-decoration: underline;
 }
 .about_img{
-  background-image: url('./img/cocktail-back.jpg');
+  /* background-image: url('./img/cocktail-back.jpg'); */
   width: 50%;
   min-height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  object-fit: contain;
 }
 .Cocktails{
   letter-spacing: 1px;
@@ -92,13 +93,14 @@ font-family: 'Shadows Into Light', cursive;
   padding: 5rem;
 }
 .cocktails_img{
-  background-image: url('./img/cocktail-back2.jpg');
+  /* background-image: url('./img/cocktail-back2.jpg'); */
   width: 50%;
   min-height: 100vh;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  object-fit:cover;
 }
 
 footer{

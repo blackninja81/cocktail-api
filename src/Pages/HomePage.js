@@ -1,3 +1,4 @@
+
 import Card from '../Components/Card';
 import Footer from '../Components/Footer';
 function HomePage() {
@@ -21,11 +22,15 @@ function HomePage() {
                     </h4>
                     <button id="search_button" type="button" class="btn btn-success">Search For Cocktail</button>
                 </div>
-                <div className='about_img' />
+                <div className='about_img'>
+                    <img src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+                </div>
             </div>
 
             <div className='Cocktails'>
-                <div className='cocktails_img' />
+                <div className='cocktails_img'>
+                    <img src="https://images.pexels.com/photos/4667081/pexels-photo-4667081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                </div>
                 <div className='cocktails_text'>
                     <h2>Our Cocktails</h2>
                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
