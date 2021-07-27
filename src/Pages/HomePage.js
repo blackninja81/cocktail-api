@@ -26,13 +26,21 @@ function HomePage() {
                     <img src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
                 </div>
             </div>
-
+            <div className='cock-info'>
+               <h2>Sample Cocktails</h2>
+               
+               <img id='s1' src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+               <img id='s1' src='https://images.pexels.com/photos/724259/pexels-photo-724259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+               <img id='s1' src='https://images.pexels.com/photos/890475/pexels-photo-890475.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+               <img id='s1' src='https://images.pexels.com/photos/1126975/pexels-photo-1126975.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+               <img id='s1' src='https://images.pexels.com/photos/1437629/pexels-photo-1437629.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
+            </div>
             <div className='Cocktails'>
                 <div className='cocktails_img'>
                     <img src="https://images.pexels.com/photos/4667081/pexels-photo-4667081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
                 </div>
                 <div className='cocktails_text'>
-                    <h2>Our Cocktails</h2>
+                    <h2>Our History</h2>
                     <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type

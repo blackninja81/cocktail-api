@@ -60,6 +60,11 @@ font-family: 'Shadows Into Light', cursive;
 .about_text h2{
   text-decoration: underline;
 }
+.cock-info h2{
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  text-decoration: underline;
+}
 .cocktails_text h2{
   text-decoration: underline;
 }
@@ -72,6 +77,22 @@ font-family: 'Shadows Into Light', cursive;
   background-position: center;
   background-attachment: fixed;
   object-fit: contain;
+}
+.cock-info{
+  width: 100%;
+  display: inline-block;
+  height: 65vh;
+  background-color: white;
+}
+#s1{
+  height: 10rem;
+  width: 10rem;
+  border-radius: 10rem;
+  margin-left: 5rem;
+  transition: .3s;
+}
+#s1:hover{
+  transform: scale(1.3);
 }
 .Cocktails{
   letter-spacing: 1px;
