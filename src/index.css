@@ -1,8 +1,71 @@
 body {
+  background-image: url('./img/cocktail-back1.jpg');
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  min-height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'STIX Two Math', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.card-body{
+  height: 100vh;
+  width: 100%;
+}
+.About{
+  display: flex;
+  height: 100vh;
+  background-size:cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+}
+.about_text{
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+  padding-top: 5rem;
+}
+.about_text h4{
+  padding: 5rem;
+}
+.about_img{
+  background-image: url('./img/cocktail-back.jpg');
+  width: 50%;
+  min-height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.Cocktails{
+  display: flex;
+  height: 100vh;
+  background-size:cover;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.cocktails_text{
+  height: 100vh;
+  width: 50%;
+  background-color: white;
+  padding-top: 5rem;
+}
+.cocktails_text h4{
+  padding: 5rem;
+}
+.cocktails_img{
+  background-image: url('./img/cocktail-back2.jpg');
+  width: 50%;
+  min-height: 100vh;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
