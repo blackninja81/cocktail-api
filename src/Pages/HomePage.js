@@ -2,7 +2,10 @@ import Card from '../Components/Card';
 
 function HomePage() {
     return (
-        <>
+        <div className='homePage'>
+            <div className="Search-button">
+                <button id="search_button" type="button" class="btn btn-success">Search For Cocktail</button>
+            </div>
             <Card />
             <div className='About'>
                 <div className='about_text'>
@@ -35,7 +38,7 @@ function HomePage() {
                     </h4>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 export default HomePage;

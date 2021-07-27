@@ -9,12 +9,20 @@ body {
   font-family: 'STIX Two Math', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(38, 38, 39);
+    background-blend-mode:soft-light;
 }
-.card-body{
+.Search-button{
   height: 100vh;
-  width: 100%;
+}
+#search_button{
+  width: 20%;
+  height: 10%;
+  margin-top: 45vh;
+  border-radius: 2rem;
 }
 .About{
+  letter-spacing: 1px;
   display: flex;
   height: 100vh;
   background-size:cover;
@@ -29,6 +37,7 @@ body {
   width: 50%;
   background-color: white;
   padding-top: 5rem;
+  
 }
 .about_text h4{
   padding: 5rem;
@@ -43,12 +52,13 @@ body {
   background-attachment: fixed;
 }
 .Cocktails{
+  letter-spacing: 1px;
   display: flex;
   height: 100vh;
   background-size:cover;
   overflow: hidden;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center center; 
   background-attachment: fixed;
 }
 .cocktails_text{
