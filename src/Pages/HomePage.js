@@ -1,5 +1,5 @@
 import Card from '../Components/Card';
-
+import Footer from '../Components/Footer';
 function HomePage() {
     return (
         <div className='homePage'>
@@ -19,6 +19,7 @@ function HomePage() {
                         containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum
                     </h4>
+                    <button id="search_button" type="button" class="btn btn-success">Search For Cocktail</button>
                 </div>
                 <div className='about_img' />
             </div>
@@ -35,9 +36,12 @@ function HomePage() {
                         It was popularised in the 1960s with the release of Letraset sheets
                         containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum
+                        <button id="learn_more" type="button" class="btn btn-white">Learn More</button>
+
                     </h4>
                 </div>
             </div>
+            <Footer/>
         </div>
     )
 }

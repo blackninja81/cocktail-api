@@ -6,7 +6,9 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  font-family: 'STIX Two Math', serif;
+  font-family: 'Indie Flower', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Shadows Into Light', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(38, 38, 39);
@@ -20,6 +22,19 @@ body {
   height: 10%;
   margin-top: 45vh;
   border-radius: 2rem;
+}
+#learn_more{
+  height: 3rem;
+  width: 10rem;
+  border-color: black;
+  font-weight: 600;
+  margin-top: 3rem;
+  transition: .3s;
+  margin-bottom: 1rem;
+}
+.btn-white:hover{
+  color: white;
+  background-color: black;
 }
 .About{
   letter-spacing: 1px;
@@ -41,6 +56,12 @@ body {
 }
 .about_text h4{
   padding: 5rem;
+}
+.about_text h2{
+  text-decoration: underline;
+}
+.cocktails_text h2{
+  text-decoration: underline;
 }
 .about_img{
   background-image: url('./img/cocktail-back.jpg');
@@ -78,4 +99,32 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+}
+
+footer{
+  color: white;
+  height: 14vh;
+  align-items: flex-end;
+  background-color: black;
+}
+footer h3{
+  padding-top: 1rem;
+}
+.footer-icons{
+  display: flex;
+  float: right;
+  margin-left: 2rem;
+  margin-right: 5rem;
+}
+.instagram{
+  margin-right: 2rem;
+}
+.facebook{
+  margin-right: 2rem;
+}
+.twitter{
+  margin-right: 2rem;
+}
+.snapchat{
+  margin-right: 2rem;
 }
