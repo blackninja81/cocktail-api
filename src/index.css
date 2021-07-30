@@ -69,7 +69,6 @@ font-family: 'Shadows Into Light', cursive;
   text-decoration: underline;
 }
 .about_img{
-  /* background-image: url('./img/cocktail-back.jpg'); */
   width: 50%;
   min-height: 100vh;
   background-size:cover;
@@ -114,7 +113,6 @@ font-family: 'Shadows Into Light', cursive;
   padding: 5rem;
 }
 .cocktails_img{
-  /* background-image: url('./img/cocktail-back2.jpg'); */
   width: 50%;
   min-height: 100vh;
   background-size:cover;

@@ -20,7 +20,6 @@ function HomePage() {
                         containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum
                     </h4>
-                    <button id="search_button" type="button" class="btn btn-success">Search For Cocktail</button>
                 </div>
                 <div className='about_img'>
                     <img src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'/>
