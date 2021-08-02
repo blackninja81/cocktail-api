@@ -14,14 +14,39 @@ font-family: 'Shadows Into Light', cursive;
   background-color: rgb(38, 38, 39);
     background-blend-mode:soft-light;
 }
+.home-h1{
+  color: white;
+  margin-top: 15vh;
+  text-decoration: underline;
+}
 .Search-button{
   height: 100vh;
+  color: white;
+  margin-top: 5rem;
+}
+.Search-button h3{
+  margin-bottom: 0;
+}
+.Search-button h4{
+  margin-top: 8rem;
+  margin-left: 20rem;
+  width: 50%;
+  text-align: center;
 }
 #search_button{
   width: 20%;
   height: 10%;
-  margin-top: 45vh;
+  margin: 5vh;
+  margin-top: 15vh;
+  font-size: 25px;
   border-radius: 2rem;
+}
+#search-box input{
+  text-align: center;
+  width: 50%;
+  height: 3rem;
+  margin-top: 5rem;
+  border-radius: 10rem;
 }
 #learn_more{
   height: 3rem;
@@ -32,9 +57,14 @@ font-family: 'Shadows Into Light', cursive;
   transition: .3s;
   margin-bottom: 1rem;
 }
+.btn-white{
+  background-color: white;
+  color: black;
+  transition: .5s;
+}
 .btn-white:hover{
-  color: white;
-  background-color: black;
+  /* color: white; */
+  background-color: yellowgreen;
 }
 .About{
   letter-spacing: 1px;
