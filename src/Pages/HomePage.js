@@ -1,40 +1,18 @@
-
+import 'react-router-dom';
 import Card from '../Components/Card';
+import NavigationBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
-import { useState, useEffect } from "react";
-import { AiOutlineSearch } from 'react-icons/ai';
-const API = "www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
 
-function HomePage() {
-
-    const [cocktail, setCocktail] = useState([]);
-
-    useEffect(() => {
-      fetch(API)
-      .then((res) => res.json())
-        .then((data) => {
-          console.log(data);
-          setCocktail(data);
-        });
-      }, []);
-      
+function HomePage() {    
 
     return (
         <div className='homePage'>
+            <NavigationBar/>
             <div className="home-h1">
                 <h1>The Bootstrap Bar</h1>
             </div>
-            <div className="search-box">
-                <form id='search-box'>
-                    <input type="text" placeholder="Search Cocktails" name="search" autoComplete='off' />
-                </form>
-            </div>
             <div className="Search-button">
-                <h3>Search for Cocktail by:</h3>
-                <button id="search_button" type="button" class="btn btn-white">Name <AiOutlineSearch /></button>
-                <button id="search_button" type="button" class="btn btn-white">First Letter <AiOutlineSearch /></button>
-                <button id="search_button" type="button" class="btn btn-white">Ingridients <AiOutlineSearch /></button>
-
+            
                 <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type

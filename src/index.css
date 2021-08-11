@@ -14,6 +14,10 @@ font-family: 'Shadows Into Light', cursive;
   background-color: rgb(38, 38, 39);
     background-blend-mode:soft-light;
 }
+.navbar{
+  width: 100%;
+  text-align: center;
+}
 .home-h1{
   color: white;
   margin-top: 15vh;
@@ -45,7 +49,7 @@ font-family: 'Shadows Into Light', cursive;
   text-align: center;
   width: 50%;
   height: 3rem;
-  margin-top: 5rem;
+  margin-top: 13rem;
 }
 #learn_more{
   height: 3rem;
