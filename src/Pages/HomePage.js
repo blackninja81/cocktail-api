@@ -1,29 +1,28 @@
 import 'react-router-dom';
-import Card from '../Components/Card';
 import NavigationBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 
-function HomePage() {    
+function HomePage() {
 
     return (
         <div className='homePage'>
-            <NavigationBar/>
-            <div className="home-h1">
-                <h1>The Bootstrap Bar</h1>
+            <NavigationBar />
+            <div className="Upper-home">
+                <div className="home-h1">
+                    <h1>The Bootstrap Bar</h1>
+                </div>
+                <div className="Upper-home-text">
+                    <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type
+                        specimen book. It has survived not only five centuries, but also the leap
+                        into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets
+                        containing Lorem Ipsum passages, and more recently with desktop publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum
+                    </h4>
+                </div>
             </div>
-            <div className="Search-button">
-            
-                <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type
-                    specimen book. It has survived not only five centuries, but also the leap
-                    into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages, and more recently with desktop publishing
-                    software like Aldus PageMaker including versions of Lorem Ipsum
-                </h4>
-            </div>
-            <Card />
             <div className='About'>
                 <div className='about_text'>
                     <h2>About Us</h2>
@@ -41,15 +40,7 @@ function HomePage() {
                     <img src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="" />
                 </div>
             </div>
-            <div className='cock-info'>
-                <h2>Sample Cocktails</h2>
-
-                <img id='s1' src='https://images.pexels.com/photos/2093089/pexels-photo-2093089.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt=""/>
-                <img id='s1' src='https://images.pexels.com/photos/724259/pexels-photo-724259.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="" />
-                <img id='s1' src='https://images.pexels.com/photos/890475/pexels-photo-890475.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="" />
-                <img id='s1' src='https://images.pexels.com/photos/1126975/pexels-photo-1126975.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="" />
-                <img id='s1' src='https://images.pexels.com/photos/1437629/pexels-photo-1437629.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="" />
-            </div>
+       
             <div className='Cocktails'>
                 <div className='cocktails_img'>
                     <img src="https://images.pexels.com/photos/4667081/pexels-photo-4667081.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" />
