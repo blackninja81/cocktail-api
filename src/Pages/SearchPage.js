@@ -2,36 +2,45 @@ import '../index.css';
 import 'react-router-dom';
 import NavigationBar from '../Components/NavBar';
 import Card from '../Components/Card';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
-const API = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+const API = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 
 function SearchPage() {
     const [cocktail, setCocktail] = useState([]);
+    const [searchTerm, setsearchTerm] = useState([]);
 
-    useEffect(() => {
-        fetch(API)
+    const handleOnSubmit = (e) => {
+        e.preventDefault();
+
+        fetch(API + searchTerm)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data.drinks[0]);
+                console.log(data.drinks);
                 setCocktail(data.drinks);
             });
-    }, []);
+    }
 
+    const handleChange = (e) => {
+        setsearchTerm(e.target.value);
+    };
 
     return (
         <div className="Upper-home">
             <NavigationBar />
             <div className="search-box">
-                <form id='search-box'>
-                    <input type="text" placeholder="Search Cocktails" name="search" autoComplete='off' />
+                <form id='search-box' onSubmit={handleOnSubmit}>
+                    <input type="text"
+                        value={searchTerm}
+                        onChange={handleChange}
+                        placeholder="Search Cocktails"
+                        name="search"
+                        autoComplete='off' />
                 </form>
             </div>
             <div className="Search-button">
-                <h3>Search for Cocktail by:</h3>
-                <button id="search_button" type="button" className="btn btn-white">Name <AiOutlineSearch /></button>
-                <button id="search_button" type="button" className="btn btn-white">First Letter <AiOutlineSearch /></button>
-                {/* <button id="search_button" type="button" class="btn btn-white">Ingridients <AiOutlineSearch /></button> */}
+                <button id="search_button" type="button" className="btn btn-white"> <AiOutlineSearch /></button>
+                <h3><u><b>{searchTerm}</b></u> Search results</h3>
             </div>
             {
                 cocktail.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
