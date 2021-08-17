@@ -4,7 +4,7 @@ font-family: 'Lobster', cursive;
 font-family: 'Shadows Into Light', cursive;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
-color: white;
+/* color: white; */
 }
 .Upper-home{
   margin: 0;
@@ -13,7 +13,7 @@ color: white;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-color: rgb(38, 38, 39);
+  background-color: rgb(201, 143, 143);
   background-blend-mode:soft-light;
   background-image: url('./img/cocktail-back1.jpg');
 }
@@ -36,6 +36,9 @@ color: white;
   margin: 5vh;
   margin-top: 15vh;
   font-size: 25px;
+}
+.Search-button{
+  margin-bottom: 7.3rem;
 }
 #search-box input{
   text-align: center;
@@ -191,8 +194,10 @@ footer h3{
   margin-right: 2rem;
 }
 .card-body{
+  width: 100%;
   display: inline-block;
-  margin-top: 3rem; 
+  padding: 3rem;
+  background-color: rgb(201, 143, 143);
 }
 .card-body .part1{
   padding-left: 2rem;
@@ -229,7 +234,6 @@ footer h3{
   width: 90%;
   color: black;
   padding: 2rem;
-  margin-left: 2rem;
   border-radius: 2rem;
   background-color: rgb(235, 228, 228);
 }

@@ -4,7 +4,7 @@ import NavigationBar from '../Components/NavBar';
 import Card from '../Components/Card';
 import { useState, useEffect } from "react";
 import { AiOutlineSearch } from 'react-icons/ai';
-const API = "www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+const API = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
 
 function SearchPage() {
     const [cocktail, setCocktail] = useState([]);
@@ -13,8 +13,8 @@ function SearchPage() {
         fetch(API)
             .then((res) => res.json())
             .then((data) => {
-                console.log(data);
-                setCocktail(data);
+                console.log(data.drinks[0]);
+                setCocktail(data.drinks);
             });
     }, []);
 
@@ -33,7 +33,9 @@ function SearchPage() {
                 <button id="search_button" type="button" className="btn btn-white">First Letter <AiOutlineSearch /></button>
                 {/* <button id="search_button" type="button" class="btn btn-white">Ingridients <AiOutlineSearch /></button> */}
             </div>
-            <Card/>
+            {
+                cocktail.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
+            }
         </div>
     )
 }
