@@ -40,7 +40,7 @@ function SearchPage() {
             </div>
             <div className="Search-button">
                 <button id="search_button" type="button" className="btn btn-white"> <AiOutlineSearch /></button>
-                <h3><u><b>{searchTerm}</b></u> Search results</h3>
+                <h3> Search results for <u><b>{searchTerm}</b></u></h3>
             </div>
             {
                 cocktail.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
