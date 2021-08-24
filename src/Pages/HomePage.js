@@ -56,7 +56,6 @@ function HomePage() {
                         containing Lorem Ipsum passages, and more recently with desktop publishing
                         software like Aldus PageMaker including versions of Lorem Ipsum
                         <button id="learn_more" type="button" class="btn btn-white">Learn More</button>
-
                     </h4>
                 </div>
             </div>

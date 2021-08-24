@@ -81,7 +81,6 @@ font-family: 'Shadows Into Light', cursive;
   width: 100%;
   height: 100vh;
   background-size:cover;
-  margin-bottom: 2rem;
   overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
@@ -259,7 +258,36 @@ footer h3{
   
 }
 @media only screen and (max-width: 500px) {
-  
+
+  .Upper-home-text{
+    padding-top: 5rem;
+    height: 75vh;
+    padding:0;
+  }  
+  .About{
+    display: inline-block;
+  }
+  .about_text{
+    width: 100%;
+    height: 75vh;
+  }
+  .about_text h4{
+    padding: 2rem;
+  }
+  .Cocktails{
+    display: inline-block;
+  }
+  .cocktails_text{
+    width: 100%;
+    padding: 0;
+    padding-top: 4rem;
+  }
+  .cocktails_text h4{
+    padding: 2rem;
+  }
+  .cocktails_img{
+    display: none;
+  }
   .card-body .cocktail_img{
     width: 100%;
     height: 50vh;
