@@ -9,9 +9,11 @@ const API = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 function SearchPage() {
     const [cocktail, setCocktail] = useState([]);
     const [searchTerm, setsearchTerm] = useState([]);
+    const [enteredSearchTerm, setEnteredSearchTerm] = useState([]);
 
     const handleOnSubmit = (e) => {
         e.preventDefault();
+        setEnteredSearchTerm("Search Results for : " + searchTerm);
 
         fetch(API + searchTerm)
             .then((res) => res.json())
@@ -40,7 +42,7 @@ function SearchPage() {
             </div>
             <div className="Search-button">
                 <button id="search_button" type="button" className="btn btn-white"> <AiOutlineSearch /></button>
-                <h3> Search results for <u><b>{searchTerm}</b></u></h3>
+                <h3>{enteredSearchTerm}</h3>
             </div>
             {
                 cocktail?.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
