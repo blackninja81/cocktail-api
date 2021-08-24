@@ -43,7 +43,7 @@ function SearchPage() {
                 <h3> Search results for <u><b>{searchTerm}</b></u></h3>
             </div>
             {
-                cocktail.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
+                cocktail?.length > 0 && cocktail.map((info) => <Card key={info.idDrink} {...info} />)
             }
         </div>
     )
