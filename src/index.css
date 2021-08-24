@@ -152,7 +152,7 @@ font-family: 'Shadows Into Light', cursive;
   padding-top: 5rem;
 }
 .cocktails_text h4{
-  padding: 5rem;
+  padding: 3rem;
 }
 .cocktails_img{
   width: 50%;
@@ -255,13 +255,19 @@ footer h3{
   .card-body .cocktail_prep{
     margin-left: 5rem;
   }
+  .cocktails_text h4{
+    padding: 4rem;
+  }
+  .about_text h4{
+    padding: 4rem;
+  }
   
 }
 @media only screen and (max-width: 500px) {
 
   .Upper-home-text{
     padding-top: 5rem;
-    height: 75vh;
+    height: 100vh;
     padding:0;
   }  
   .About{
@@ -269,7 +275,7 @@ footer h3{
   }
   .about_text{
     width: 100%;
-    height: 75vh;
+    height: 100vh;
   }
   .about_text h4{
     padding: 2rem;
